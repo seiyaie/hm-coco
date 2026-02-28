@@ -209,11 +209,13 @@ body {
     font-family: var(--font-family-base);
     letter-spacing: 0.08em;
 }
+
 @media screen and (min-width: 768px) {
     body {
         font-size: 16px;
     }
 }
+
 /*!
 utility > utility
 ------------------------------
@@ -230,6 +232,7 @@ utility > utility
     clip-path: inset(50%) !important;
     margin: -1px !important;
 }
+
 /*!
 component > button
 ------------------------------
@@ -244,17 +247,20 @@ component > button
     display: inline-block;
     transition: all 0.3s;
 }
+
 @media screen and (min-width: 768px) {
     .c-button {
         font-size: 18px;
     }
 }
+
 @media (any-hover: hover) {
-  .c-button:hover{
-    transform: scale(1.05);
-    opacity: 0.7;
-  }
+    .c-button:hover {
+        transform: scale(1.05);
+        opacity: 0.7;
+    }
 }
+
 .c-button--size-medium {
     width: 100%;
     max-width: 260px;
@@ -262,11 +268,13 @@ component > button
     display: grid;
     place-items: center;
 }
+
 @media screen and (min-width: 768px) {
     .c-button--size-medium {
         max-width: 324px;
     }
 }
+
 .c-button--size-large {
     width: 100%;
     max-width: 260px;
@@ -274,19 +282,23 @@ component > button
     display: grid;
     place-items: center;
 }
+
 @media screen and (min-width: 768px) {
     .c-button--size-large {
         max-width: 360px;
     }
 }
+
 .c-button--text-english {
     font-family: var(--font-family-english);
     text-transform: uppercase;
     font-weight: 400;
 }
+
 .c-button--center {
     margin: 0 auto;
 }
+
 /*!
 component > title
 ------------------------------
@@ -306,11 +318,13 @@ component > title
     font-size: 14px;
     color: var(--color-font-black);
 }
+
 @media screen and (min-width: 768px) {
     .c-title-level1 {
         font-size: 18px;
     }
 }
+
 .c-title-level1--center {
     padding-left: 0.08em;
     text-align: center;
@@ -319,11 +333,13 @@ component > title
 .c-title-level1-english {
     font-size: 24px;
 }
+
 @media screen and (min-width: 768px) {
     .c-title-level1-english {
         font-size: 36px;
     }
 }
+
 .c-title-level1-english--center {
     text-align: center;
     padding-left: 0.4em;
@@ -335,11 +351,13 @@ component > title
     color: var(--color-font-black);
     margin-top: 8px;
 }
+
 @media screen and (min-width: 768px) {
     .c-title-level2 {
         font-size: 18px;
     }
 }
+
 .c-title-level2--center {
     text-align: center;
     padding-left: 0.08em;
@@ -349,14 +367,17 @@ component > title
     font-size: 20px;
     line-height: 1;
 }
+
 @media screen and (min-width: 768px) {
     .c-title-level2-english {
         font-size: 32px;
     }
 }
+
 .c-title-level2-english span {
     display: inline-block;
 }
+
 .c-title-level2-english--center {
     text-align: center;
     padding-left: 0.4em;
@@ -368,15 +389,18 @@ component > title
     color: var(--color-font-black);
     font-weight: 500;
 }
+
 @media screen and (min-width: 768px) {
     .c-title-level3 {
         font-size: 20px;
     }
 }
+
 .c-title-level3--center {
     padding-left: 0.08em;
     text-align: center;
 }
+
 /*!
 component > page-kv
 ------------------------------
@@ -387,27 +411,33 @@ component > page-kv
     background-position: center;
     background-size: cover;
 }
+
 @media screen and (min-width: 768px) {
     .c-page-kv {
         height: 300px;
     }
 }
+
 .c-page-kv--product {
     background-image: url(../img/bg-product-kv-sp.jpg);
 }
+
 @media screen and (min-width: 768px) {
     .c-page-kv--product {
         background-image: url(../img/bg-product-kv.jpg);
     }
 }
+
 .c-page-kv--error {
     background-image: url(../img/bg-error-kv-sp.jpg);
 }
+
 @media screen and (min-width: 768px) {
     .c-page-kv--error {
         background-image: url(../img/bg-error-kv.jpg);
     }
 }
+
 /*!
 component > products
 ------------------------------
@@ -417,29 +447,37 @@ component > products
     gap: 48px 24px;
     grid-template-columns: repeat(1, 1fr);
 }
+
 @media screen and (min-width: 500px) {
+
     .c-products--col2,
     .c-products--col3 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media screen and (min-width: 768px) {
+
     .c-products--col2,
     .c-products--col3 {
         gap: 48px 40px;
     }
 }
+
 @media screen and (min-width: 1080px) {
+
     .c-products--col2,
     .c-products--col3 {
         gap: 80px;
     }
 }
+
 @media screen and (min-width: 1080px) {
     .c-products--col3 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 /*!
 component > product
 ------------------------------
@@ -453,6 +491,7 @@ component > product
     transition: opacity 0.3s;
     overflow: hidden;
 }
+
 @media (any-hover: hover) {
     .c-product-thumbnail:hover {
         opacity: 0.7;
@@ -460,13 +499,13 @@ component > product
 }
 
 .c-product-thumbnail img {
-  transition: transform 0.3s;
+    transition: transform 0.3s;
 }
 
 @media (any-hover: hover) {
-  .c-product-thumbnail:hover img {
-    transform: scale(1.05);
-  }
+    .c-product-thumbnail:hover img {
+        transform: scale(1.05);
+    }
 }
 
 .c-product-name {
@@ -479,6 +518,7 @@ component > product
     margin-top: 8px;
     padding-left: 0.08em;
 }
+
 .c-product-text span {
     display: block;
 }
@@ -513,6 +553,7 @@ layout > section
 .l-section {
     padding: 96px 0;
 }
+
 @media screen and (min-width: 768px) {
     .l-section {
         padding: 160px 0;
@@ -526,6 +567,7 @@ layout > section-body
 .l-section-body {
     margin-top: 48px;
 }
+
 @media screen and (min-width: 768px) {
     .l-section-body {
         margin-top: 80px;
@@ -543,6 +585,7 @@ layout > header
     justify-content: space-between;
     padding: 0 5%;
 }
+
 @media screen and (min-width: 768px) {
     .header {
         height: 80px;
@@ -553,25 +596,31 @@ layout > header
 .header-logo {
     width: 70px;
 }
+
 @media screen and (min-width: 768px) {
     .header-logo {
         width: 85px;
     }
 }
+
 .header-logo img {
     display: block;
 }
+
 .header-cart {
     width: 24px;
 }
+
 @media screen and (min-width: 768px) {
     .header-cart {
         width: 26px;
     }
 }
+
 .header-cart img {
     display: block;
 }
+
 /*!
 layout > footer
 ------------------------------
@@ -581,6 +630,7 @@ layout > footer
     background-color: var(--color-bg-primary);
     padding: 40px 0 20px;
 }
+
 @media screen and (min-width: 768px) {
     .footer {
         padding: 56px 0 24px;
@@ -591,11 +641,13 @@ layout > footer
     margin: 0 auto;
     width: 84px;
 }
+
 @media screen and (min-width: 768px) {
     .footer-logo {
         margin: 0;
     }
 }
+
 .footer-logo img {
     display: block;
 }
@@ -610,6 +662,7 @@ layout > footer
     flex-wrap: wrap;
     gap: 12px 16px;
 }
+
 @media screen and (min-width: 768px) {
     .footer-list {
         justify-content: flex-start;
@@ -620,6 +673,7 @@ layout > footer
     font-size: 12px;
     line-height: 1;
 }
+
 @media screen and (min-width: 768px) {
     .footer-item {
         font-size: 14px;
@@ -634,12 +688,14 @@ layout > footer
     padding-top: 20px;
     margin-top: 24px;
 }
+
 @media screen and (min-width: 768px) {
     .footer-copyright {
         padding-top: 24px;
         margin-top: 40px;
     }
 }
+
 /*!
 page > top > common
 ------------------------------
@@ -650,23 +706,28 @@ page > top > common
     background-size: cover;
     aspect-ratio: 360/180;
 }
+
 @media screen and (min-width: 1080px) {
     .top-img-separate {
         aspect-ratio: inherit;
         height: 640px;
     }
 }
+
 .top-img-separate--lineup {
     background-image: url(../img/bg-lineup-sp.jpg);
 }
+
 @media screen and (min-width: 768px) {
     .top-img-separate--lineup {
         background-image: url(../img/bg-lineup.jpg);
     }
 }
+
 .top-img-separate--instagram {
     background-image: url(../img/bg-instagram-sp.jpg);
 }
+
 @media screen and (min-width: 768px) {
     .top-img-separate--instagram {
         background-image: url(../img/bg-instagram.jpg);
@@ -683,6 +744,7 @@ page > top > top-kv
         height: 689px;
     }
 }
+
 .top-kv::before {
     content: "";
     display: block;
@@ -691,6 +753,7 @@ page > top > top-kv
     background-position: center;
     background-size: cover;
 }
+
 @media screen and (min-width: 768px) {
     .top-kv::before {
         width: calc(95% - 320px);
@@ -700,6 +763,7 @@ page > top > top-kv
         background-image: url(../img/bg-top-kv.jpg);
     }
 }
+
 @media screen and (min-width: 1080px) {
     .top-kv::before {
         width: calc(100% - ((100% - 1080px) / 2 + 320px));
@@ -709,6 +773,7 @@ page > top > top-kv
 .top-kv-inner {
     margin-top: 24px;
 }
+
 @media screen and (min-width: 768px) {
     .top-kv-inner {
         width: 100%;
@@ -727,11 +792,13 @@ page > top > top-kv
     letter-spacing: 0.2em;
     font-weight: 500;
 }
+
 @media screen and (min-width: 768px) {
     .top-kv-copy-text {
         font-size: 40px;
     }
 }
+
 .top-kv-copy-text span {
     display: block;
 }
@@ -739,6 +806,7 @@ page > top > top-kv
 .top-kv-button {
     margin-top: 24px;
 }
+
 @media screen and (min-width: 768px) {
     .top-kv-button {
         margin-top: 96px;
@@ -754,11 +822,13 @@ page > top > top-feature
     gap: 48px 40px;
     grid-template-columns: repeat(1, 1fr);
 }
+
 @media screen and (min-width: 500px) {
     .top-feature-list {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media screen and (min-width: 1080px) {
     .top-feature-list {
         gap: 80px 60px;
@@ -775,15 +845,18 @@ page > top > top-feature
         align-items: center;
     }
 }
+
 .top-feature-item:nth-child(1) .top-feature-item-img img {
     aspect-ratio: 324/182;
     object-fit: cover;
 }
+
 @media screen and (min-width: 1080px) {
     .top-feature-item:nth-child(1) .top-feature-item-img img {
         aspect-ratio: inherit;
     }
 }
+
 @media screen and (min-width: 768px) {
     .top-feature-item:nth-child(1) .top-feature-item-contents {
         margin-top: 0;
@@ -813,6 +886,7 @@ page > top > top-instagram
     grid-template-columns: repeat(3, 1fr);
     gap: 9px;
 }
+
 @media screen and (min-width: 768px) {
     .top-instagram-list {
         gap: 24px;
@@ -820,24 +894,25 @@ page > top > top-instagram
 }
 
 .top-instagram-item {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .top-instagram-item a {
-  display: inline-block;
-  transition: all 0.3s;
+    display: inline-block;
+    transition: all 0.3s;
 }
 
 @media (any-hover: hover) {
-  .top-instagram-item a:hover{
-    transform: scale(1.05);
-    opacity: 0.7;
-  }
+    .top-instagram-item a:hover {
+        transform: scale(1.05);
+        opacity: 0.7;
+    }
 }
 
 .top-instagram-button {
     margin-top: 48px;
 }
+
 @media screen and (min-width: 768px) {
     .top-instagram-button {
         margin-top: 80px;
@@ -856,15 +931,18 @@ page > product
         gap: 40px;
     }
 }
+
 @media screen and (min-width: 1080px) {
     .product-item-inner {
         grid-template-columns: 420px 1fr;
         gap: 80px;
     }
 }
+
 .product-item-contents {
     margin-top: 24px;
 }
+
 @media screen and (min-width: 768px) {
     .product-item-contents {
         margin-top: 0;
@@ -876,6 +954,7 @@ page > product
     font-size: 22px;
     font-weight: 500;
 }
+
 @media screen and (min-width: 768px) {
     .product-item-name {
         font-size: 26px;
@@ -885,6 +964,7 @@ page > product
 .product-item-text {
     margin-top: 16px;
 }
+
 @media screen and (min-width: 768px) {
     .product-item-text {
         margin-top: 24px;
@@ -896,6 +976,7 @@ page > product
     display: flex;
     justify-content: center;
 }
+
 @media screen and (min-width: 768px) {
     .product-item-button {
         justify-content: flex-start;
@@ -913,6 +994,7 @@ page > product-related
 .product-related-title {
     line-height: 1.6;
 }
+
 @media screen and (min-width: 768px) {
     .product-related-title {
         line-height: 1;
@@ -927,11 +1009,13 @@ page > error > error
     text-align: center;
     margin-top: 32px;
 }
+
 @media screen and (min-width: 768px) {
     .error-text {
         margin-top: 40px;
     }
 }
+
 @media screen and (min-width: 768px) {
     .error-text span {
         display: block;
@@ -941,6 +1025,7 @@ page > error > error
 .error-button {
     margin-top: 32px;
 }
+
 @media screen and (min-width: 768px) {
     .error-button {
         margin-top: 40px;
