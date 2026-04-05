@@ -1,6 +1,6 @@
 # EC サイト：coco
 
-<<<<<<< HEAD
+![coco サムネイル](./img/docs/thumbnail.jpg)
 
 ## 概要
 
